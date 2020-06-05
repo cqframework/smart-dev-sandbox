@@ -23,6 +23,10 @@ html, body {
 
 .wrapper {
     height       : 100%;
+    align-items: center;
+    text-align   : center;
+    justify-content    : center;
+    horiz-align: center;
     display      : -ms-flexbox;
     display      : flex;
     -ms-flex-flow: column;
@@ -188,15 +192,31 @@ h3 {
     font-size: 1.8rem;
     /* margin: 0; */
 }
+label {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #333;
+    height: 20px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
 
-.label {
+labelold {
     padding: 1px 5px;
     margin: -1px 0;
     border-radius: 6px;
     text-shadow: none;
-    color: #FFF;
+    color: #000;
     line-height: 1;
     vertical-align: baseline;
+    clear: both;
+    float: left;
+    text-align: right;
 }
 .label-accent-2 {
     background: #FF931E;
@@ -253,4 +273,12 @@ h3 {
     -ms-flex-pack     : center;
     justify-content   : center;
     font-size         : small;
+}
+
+.button{
+    width: 300px; height: 50px;
+}
+
+.patientIdEntry{
+    width: 300px; height: 30px;
 }

@@ -110,4 +110,5 @@ services:
       HOST                : "${HOST}"
       ISSUES_URL          : "https://github.com/smart-on-fhir/smart-dev-sandbox/issues"
       PMDASHBOARD         : "${PMDASHBOARD}"
+      MYPAIN              : "${MYPAIN}"
     command: sh -c "envsubst < /usr/share/nginx/html/template.html > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'"

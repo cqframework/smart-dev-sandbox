@@ -8,19 +8,18 @@
         <link rel="shortcut icon" href="favicon.png" type="image/png" />
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <script type="text/javascript" src="LaunchPMDashboard.js"></script>
+        <script type="text/javascript" src="LaunchMyPAIN.js"></script>
     </head>
     <body>
         <div class="wrapper">
-         <!-- a target="_blank" href="http://$HOST:$LAUNCHER_PORT" class="launch" -->
-            <!-- a target="_blank" href="http://launch.smarthealthit.org/ehr.html?app=http%3A%2F%2Flocalhost%3A8000%2Flaunch.html%3Flaunch%3D%26patient%3D34952%26fhirServiceUrl%3Dhttp://localhost:8080/cqf-ruler-r4/fhir" class="launch" -->
             <h1>CDS4CPM SMART App Launcher</h1>
             <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
                 <label for="patientIdEntry">Enter Patient Id</label>
                 <input class=patientIdEntry type="text" id="patientIdEntry" name="patientIdEntry"><br>
             </div>
             <br>
-           <button class=button type="submit"  onclick="launchPMDashboard(document, '$PMDASHBOARD', '$CQF_RULER')" >Launch PMDashboard</button></h4><br>
-            <button class=button type="submit">Launch MyPAIN (under construction)</button></h4>
+           <button class=button type="submit" onclick="launchPMDashboard(document, '$PMDASHBOARD', '$CQF_RULER')" >Launch PMDashboard</button></h4><br>
+            <button class=button type="submit"onclick="launchMyPAIN(document, '$MYPAIN', '$CQF_RULER')">Launch MyPAIN (under construction)</button></h4>
           </a>
         </div>
     </body>

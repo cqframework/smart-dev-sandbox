@@ -1,6 +1,6 @@
 function launchPMDashboard(document, dashboardURL, fhirServiceUrl){
         let patientIdEntry = document.getElementById('patientIdEntry').value;
-        const launchParams = {a:"1",b:patientIdEntry,e:"efb5d4ce-dffc-47df-aa6d-05d372fdb407",f:"1"}
+        const launchParams = {a:"1",b:patientIdEntry,e:"efb5d4ce-dffc-47df-aa6d-05d372fdb407",f:"1",q:fhirServiceUrl}
         let url1 = dashboardURL + `?launch=${btoa(JSON.stringify(launchParams))}`;
 
         console.log(url1);
